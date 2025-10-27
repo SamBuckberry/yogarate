@@ -38,11 +38,8 @@
   </a>
   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   <nav aria-label="Primary">
-    <a href="#classes">Classes</a>
-    <a href="#timetable">Timetable</a>
     <a href="#philosophy">Philosophy</a>
-    <a href="#instructors">Instructors</a>
-    <a href="#journal">Journal</a>
+    <a href="#classes">Classes</a>
     <a class="cta" href="#contact">Book a Trial</a>
   </nav>
 </header>
@@ -209,9 +206,8 @@
   <section id="contact" class="narrow">
     <h2>Book a Trial</h2>
     <p>No hard sell. Send us a message and we'll confirm your preferred class. It's that simple.</p>
-    <form name="contact" method="post" action="https://formspree.io/f/YOUR_FORM_ID" netlify-honeypot="bot-field">
-      <input type="hidden" name="_subject" value="Yogarate Trial Booking">
-      <p style="display:none"><label><input name="bot-field"></label></p>
+    <p class="muted">Email us at <a href="mailto:hello@yogarate.site">hello@yogarate.site</a> or use the form below:</p>
+    <form name="contact" method="post" action="mailto:hello@yogarate.site">
       <label for="name">Full name</label><input id="name" type="text" name="name" required>
       <label for="email">Email</label><input id="email" type="email" name="email" required>
       <label for="class">Preferred class</label>
@@ -223,7 +219,6 @@
       <label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea>
       <button class="btn" type="submit">Send</button>
     </form>
-    <p class="muted">We respect your privacy and keep messages confidential.</p>
   </section>
 
   <!-- FAQ Section -->
