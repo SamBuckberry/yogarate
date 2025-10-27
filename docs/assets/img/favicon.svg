@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 120 120" role="img" aria-label="Yogarate favicon">
+  <defs>
+    <linearGradient id="gfav" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1A1A"/><stop offset="1" stop-color="#B22222"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="url(#gfav)" stroke-width="8"/>
+  <path d="M20,70 C45,95 75,95 100,70" fill="none" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M20,50 L60,20 L100,50" fill="none" stroke="#B22222" stroke-width="8" stroke-linecap="round"/>
+</svg>
+

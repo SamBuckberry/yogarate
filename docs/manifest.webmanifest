@@ -1,0 +1,10 @@
+{
+  "name": "Yogarate",
+  "short_name": "Yogarate",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#B22222",
+  "icons": [{ "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
+

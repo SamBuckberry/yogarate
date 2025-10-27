@@ -1,0 +1,31 @@
+name: Build Business Plan PDF
+
+on:
+  push:
+    paths:
+      - 'content/business_plan.md'
+      - '.github/workflows/build-business-plan.yml'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Pandoc + LaTeX (minimal)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+      
+      - name: Render PDF
+        run: |
+          mkdir -p docs
+          pandoc content/business_plan.md -o docs/business_plan.pdf --pdf-engine=xelatex
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: business-plan-pdf
+          path: docs/business_plan.pdf
+

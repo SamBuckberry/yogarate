@@ -1,0 +1,50 @@
+:root{
+  --ink:#1A1A1A; --paper:#FAFAFA; --crimson:#B22222; --slate:#4A4A4A;
+  --radius:12px; --space:clamp(12px,2vw,24px); --maxw:1100px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:Lora,serif;line-height:1.6}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;line-height:1.2;margin:0 0 .6em}
+h1{font-size:clamp(2rem,3.5vw,3rem)}
+h2{font-size:clamp(1.5rem,2.5vw,2rem)}
+h3{font-size:clamp(1.25rem,2vw,1.5rem)}
+p,li{font-size:1.05rem}
+a{color:var(--crimson);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+
+.site-header,.site-footer{max-width:var(--maxw);margin:auto;padding:calc(var(--space)*.8) var(--space);display:flex;align-items:center;gap:var(--space)}
+.site-header{justify-content:space-between}
+.site-header nav a{margin:0 .5rem}
+.site-header .cta{background:var(--crimson);color:white;padding:.5rem .9rem;border-radius:999px}
+.site-header .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--ink)}
+.site-footer{justify-content:space-between;border-top:1px solid #ddd;font-size:.95rem;color:var(--slate)}
+.site-footer nav a{margin-left:1rem}
+
+main{max-width:var(--maxw);margin:auto;padding:var(--space)}
+.narrow{max-width:750px}
+
+.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space);align-items:center}
+.hero .hero-copy .btn{margin-right:.6rem}
+.btn{display:inline-block;background:var(--crimson);color:#fff;padding:.7rem 1.1rem;border-radius:999px;border:none}
+.btn.ghost{background:transparent;color:var(--crimson);border:2px solid var(--crimson)}
+.cta-band{background:var(--ink);color:#fff;padding:calc(var(--space)*2);text-align:center;border-radius:var(--radius)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space)}
+.sequence{display:grid;grid-template-columns:1fr 1fr;gap:var(--space);align-items:center}
+.card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:var(--space)}
+
+.timetable{width:100%;border-collapse:collapse}
+.timetable th,.timetable td{border:1px solid #ddd;padding:.6rem;text-align:left}
+.muted{color:var(--slate);font-size:.95rem}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .sequence{grid-template-columns:1fr}
+}
+:focus-visible{outline:3px solid var(--crimson);outline-offset:2px}
+html{scroll-behavior:smooth}
+/* Add spacing between sections */
+section{margin:calc(var(--space)*2) 0;padding:var(--space) 0}
+#home{margin-top:0}
+
