@@ -1,23 +1,17 @@
 # Manual Setup Required
 
-## 1. Formspree Setup (Contact Form) ⚠️ REQUIRED
+## 1. Contact Form Setup
 
-The contact form currently has a placeholder Formspree ID.
+The contact form uses a simple mailto link. When users submit the form, their default email client opens.
 
-### Steps:
-1. Go to https://formspree.io/
-2. Sign up (free tier supports 50 submissions/month)
-3. Create a new form
-4. Copy your form ID (looks like `xnozdqwr`)
-5. In `docs/index.html`, line 211, replace `YOUR_FORM_ID` with your actual ID:
-   ```html
-   <form name="contact" method="post" action="https://formspree.io/f/YOUR_FORM_ID">
-   ```
+### Email Configuration:
+- Update email address in `docs/index.html` if needed (currently `hello@yogarate.site`)
+- Consider setting up email forwarding for the domain if you want a dedicated inbox
 
-### Alternative Options:
-- **Formsubmit**: No signup required, just use `action="https://formsubmit.co/YOUR_EMAIL"`
-- **EmailJS**: Free tier, more complex setup
-- **Google Forms**: Embed via iframe
+### Future Options (if form submissions increase):
+- **Formspree**: https://formspree.io/ (50 free submissions/month)
+- **Formsubmit**: https://formsubmit.co/ (no signup)
+- **EmailJS**: More complex but free tier available
 
 ---
 
