@@ -14,10 +14,12 @@ a:hover{text-decoration:underline}
 img{max-width:100%;height:auto;display:block}
 
 .site-header,.site-footer{max-width:var(--maxw);margin:auto;padding:calc(var(--space)*.8) var(--space);display:flex;align-items:center;gap:var(--space)}
-.site-header{justify-content:space-between}
+.site-header{justify-content:space-between;position:relative}
+.site-header nav{display:flex;align-items:center;gap:calc(var(--space)*.5)}
 .site-header nav a{margin:0 .5rem}
 .site-header .cta{background:var(--crimson);color:white;padding:.5rem .9rem;border-radius:999px}
 .site-header .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--ink)}
+.menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--ink)}
 .site-footer{justify-content:space-between;border-top:1px solid #ddd;font-size:.95rem;color:var(--slate)}
 .site-footer nav a{margin-left:1rem}
 
@@ -37,10 +39,20 @@ main{max-width:var(--maxw);margin:auto;padding:var(--space)}
 .timetable th,.timetable td{border:1px solid #ddd;padding:.6rem;text-align:left}
 .muted{color:var(--slate);font-size:.95rem}
 
+/* Form styling */
+label{display:block;margin:.8rem 0 .4rem;font-weight:600}
+input[type="text"],input[type="email"],textarea,select{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:var(--radius);font-family:inherit;font-size:1rem}
+select{padding:.7rem .6rem}
+textarea{resize:vertical}
+
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
   .sequence{grid-template-columns:1fr}
+  .menu-toggle{display:block}
+  .site-header nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-top:1px solid #ddd;flex-direction:column;padding:var(--space);box-shadow:0 4px 6px rgba(0,0,0,.1)}
+  .site-header nav.active{display:flex}
+  .site-header nav a{margin:.5rem 0;display:block}
 }
 :focus-visible{outline:3px solid var(--crimson);outline-offset:2px}
 html{scroll-behavior:smooth}

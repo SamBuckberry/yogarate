@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://sambuckberry.github.io/yogarate/sitemap.xml
+Sitemap: https://yogarate.site/sitemap.xml
 

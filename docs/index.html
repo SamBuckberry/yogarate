@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Yogarate — Balance. Power. Flow.</title>
-<meta name="description" content="Yogarate blends the stillness of yoga with the disciplined power of karate. Balance. Power. Flow.">
+<meta name="description" content="The antidote to wellness culture. Yogarate is the disciplined union of yoga and karate—practised properly, without the nonsense.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@600;700;800&display=swap">
@@ -11,11 +11,11 @@
 <link rel="apple-touch-icon" href="assets/img/og-hero.jpg">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yogarate — Balance. Power. Flow.">
-<meta property="og:description" content="The union of yoga and karate.">
+<meta property="og:description" content="The antidote to wellness culture. Two ancient disciplines practised properly, without the nonsense.">
 <meta property="og:image" content="assets/img/og-hero.jpg">
-<meta property="og:url" content="https://sambuckberry.github.io/yogarate/">
+<meta property="og:url" content="https://yogarate.site/">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://sambuckberry.github.io/yogarate/">
+<link rel="canonical" href="https://yogarate.site/">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="assets/css/base.css">
 <script defer src="js/main.js"></script>
@@ -24,8 +24,8 @@
  "@context":"https://schema.org",
  "@type":"Organization",
  "name":"Yogarate",
- "url":"https://sambuckberry.github.io/yogarate/",
- "logo":"https://sambuckberry.github.io/yogarate/assets/img/logo.svg",
+ "url":"https://yogarate.site/",
+ "logo":"https://yogarate.site/assets/img/logo.svg",
  "sameAs":[]
 }
 </script>
@@ -36,13 +36,13 @@
     <img src="assets/img/logo.svg" alt="Yogarate logo" width="32" height="32">
     <span>Yogarate</span>
   </a>
+  <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
   <nav aria-label="Primary">
     <a href="#classes">Classes</a>
     <a href="#timetable">Timetable</a>
     <a href="#philosophy">Philosophy</a>
     <a href="#instructors">Instructors</a>
     <a href="#journal">Journal</a>
-    <a href="#shop">Shop</a>
     <a class="cta" href="#contact">Book a Trial</a>
   </nav>
 </header>
@@ -82,14 +82,14 @@
   <!-- Sequences Section -->
   <section class="sequences">
     <div class="sequence">
-      <img src="assets/img/sequence-1.webp" alt="Flow sequence combining warrior pose and kata footwork">
+      <img src="assets/img/sequence-1.webp" alt="Flow sequence combining warrior pose and kata footwork" loading="lazy">
       <div>
         <h3>Flow</h3>
         <p>Seamless transitions blend salutations with kata-inspired footwork for mindful conditioning.</p>
       </div>
     </div>
     <div class="sequence">
-      <img src="assets/img/sequence-2.webp" alt="Power sequence showing controlled strike into balanced hold">
+      <img src="assets/img/sequence-2.webp" alt="Power sequence showing controlled strike into balanced hold" loading="lazy">
       <div>
         <h3>Power</h3>
         <p>Explosive yet controlled drills build strength and stability—precision before intensity.</p>
@@ -141,14 +141,14 @@
     <h2>Instructors</h2>
     <section class="team">
       <article class="card">
-        <img src="assets/img/instructor-1.webp" alt="Instructor demonstrating balanced stance">
+        <img src="assets/img/instructor-1.webp" alt="Instructor demonstrating balanced stance" loading="lazy">
         <h3>Alex Tan</h3>
-        <p>Founder. Black belt (Shotokan). Yoga teacher (RYT-500). Calm, precise, encouraging.</p>
+        <p><strong>Founder</strong>. 12 years teaching. Black belt (Shotokan), RYT-500. Tired of fitness culture's relentless novelty, Alex integrated two timeless disciplines into one practice—because efficiency doesn't require reinvention. Calm, precise, encouraging.</p>
       </article>
       <article class="card">
-        <img src="assets/img/instructor-2.webp" alt="Instructor guiding mindful breathwork">
+        <img src="assets/img/instructor-2.webp" alt="Instructor guiding mindful breathwork" loading="lazy">
         <h3>Maya Singh</h3>
-        <p>Movement specialist. Breathwork and mobility. Focus on sustainable progress.</p>
+        <p><strong>Movement specialist</strong>. 8 years practice. Breathwork and mobility specialist. Believes sustainable progress beats short-term transformation. Focus: helping students move better, not just more. No before/after photos.</p>
       </article>
     </section>
   </section>
@@ -205,28 +205,52 @@
     <p id="timetable-help" class="muted">Times may change on public holidays. Contact us to confirm availability.</p>
   </section>
 
-  <!-- Shop Section -->
-  <section id="shop" class="narrow">
-    <h2>Shop</h2>
-    <p>Coming soon: Branded mats, wraps, breathable tops, and crimson sash. All functional, no lifestyle influencer bullshit. For pre-orders, <a href="#contact">contact us</a>.</p>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact" class="narrow">
     <h2>Book a Trial</h2>
     <p>No hard sell. Send us a message and we'll confirm your preferred class. It's that simple.</p>
-    <form name="contact" method="post" data-netlify="true">
-      <label>Full name<input name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Preferred class
-        <select name="class">
-          <option>Yogarate Flow</option><option>Yogarate Power</option><option>Yogarate Restore</option>
-        </select>
-      </label>
-      <label>Message<textarea name="message"></textarea></label>
+    <form name="contact" method="post" action="https://formspree.io/f/YOUR_FORM_ID" netlify-honeypot="bot-field">
+      <input type="hidden" name="_subject" value="Yogarate Trial Booking">
+      <p style="display:none"><label><input name="bot-field"></label></p>
+      <label for="name">Full name</label><input id="name" type="text" name="name" required>
+      <label for="email">Email</label><input id="email" type="email" name="email" required>
+      <label for="class">Preferred class</label>
+      <select id="class" name="class">
+        <option value="Yogarate Flow">Yogarate Flow</option>
+        <option value="Yogarate Power">Yogarate Power</option>
+        <option value="Yogarate Restore">Yogarate Restore</option>
+      </select>
+      <label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea>
       <button class="btn" type="submit">Send</button>
     </form>
     <p class="muted">We respect your privacy and keep messages confidential.</p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="narrow">
+    <h2>Frequently Asked Questions</h2>
+    
+    <h3>Do I need prior experience?</h3>
+    <p>No. Yoga experience helps but isn't required. Karate experience equally optional. We start with fundamentals and progress at your pace.</p>
+    
+    <h3>What should I bring?</h3>
+    <p>Comfortable clothes that allow movement. Barefoot (we practise indoors). Water. That's it. No special equipment needed.</p>
+    
+    <h3>Is it intense?</h3>
+    <p>It can be. But intensity isn't the goal—control is. You won't be shouted at or pushed beyond safe limits. Precision before intensity, always.</p>
+    
+    <h3>Do I need to book?</h3>
+    <p>Book your first trial via the contact form. After that, regular class attendance is encouraged but not mandatory. Show up when you can.</p>
+    
+    <h3>What makes this different from yoga studios?</h3>
+    <p>Two things: we integrate martial arts structure (kata, stance work), and we're allergic to spiritual bypassing. No candles, no crystals, no affirmations. Just practice.</p>
+  </section>
+
+  <!-- Studio Section -->
+  <section class="narrow">
+    <h2>The Space</h2>
+    <p>Minimalist. Bamboo flooring. Tatami accents. Warm light. No clutter, no distractions. The focus is the practice, not the environment.</p>
+    <img src="assets/img/studio.webp" alt="Minimalist studio with bamboo flooring and tatami accents" loading="lazy">
   </section>
 
   <!-- Final CTA Section -->
